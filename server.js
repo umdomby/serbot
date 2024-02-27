@@ -144,8 +144,9 @@ const start = async () => {
                     case "connection":
                         // const dencrypted = encrypter.dencrypt(msg.id);
                         // wsg.id = dencrypted
-                        console.log(msg.connected + ' connected ' + msg.id + ' ' )
+                        console.log(msg.connected + ' case connection ws.on ' + msg.id + ' ' )
                         ws.id = msg.id
+                        wsaSend(JSON.stringify({method: 'connection', id : msg.id}), ws)
                         break;
 
                     // case "messages":

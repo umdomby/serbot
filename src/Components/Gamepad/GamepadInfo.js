@@ -379,7 +379,9 @@ const GamepadInfo = ({ buttons, axes }) => {
 
   return (
     <div className='gamepad'>
-      {' speed ' + refSpeed.current + ' = '+ (25.5 * refSpeed.current)}
+      {' speed ' + refSpeed.current + ' = '+ (25 * refSpeed.current)}
+      <div>{'LT = ' + (parseInt(lt.value * refSpeed.current * 25))}</div>
+      <div>{'RT = ' + (parseInt(rt.value * refSpeed.current * 25))}</div>
         {/*<input*/}
         {/*    value={startSpeed}*/}
         {/*    type="range"*/}

@@ -1,0 +1,30 @@
+.socketButton {
+    background-color: #D3D3D3;
+    text-align: center;
+    border-width: 1px;
+    font-size: 11px;
+    width: 6em;
+    height: 2em;
+    position: absolute;
+}
+.socketInput {
+    background-color: #D3D3D3;
+    text-align: center;
+    border-width: 1px;
+    font-size: 12px;
+    height: 1.5em;
+    position: absolute;
+    margin-left: 6em;
+}
+
+@media (max-width: 25em) {
+    .socketInput {
+        width: 15em;
+    }
+}
+
+@media (min-width: 25em) {
+    .socketInput {
+        width: 35em;
+    }
+}

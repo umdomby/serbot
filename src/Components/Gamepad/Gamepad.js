@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Lib from "./Lib";
 import GamepadInfo from "./GamepadInfo";
-
+import './gamepad.css'
 const gamepad = new Lib();
 const { CONNECTED, DISCONNECTED } = Lib;
 

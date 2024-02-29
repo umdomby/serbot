@@ -1,0 +1,11 @@
+.gamepad {
+    width: 25em;
+    height: 1.5em;
+    position: absolute;
+    margin-left: 5em;
+}
+.gamepadInfo {
+    color:white;
+    position:absolute;
+    z-index: 10801;
+}

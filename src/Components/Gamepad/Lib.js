@@ -121,7 +121,7 @@ class Lib {
   }
 
   /**
-   * Set the connection status
+   * ModalSet the connection status
    *
    * @access public
    */
@@ -130,7 +130,7 @@ class Lib {
   }
 
   /**
-   * Set the disconnection status
+   * ModalSet the disconnection status
    *
    * @access public
    */

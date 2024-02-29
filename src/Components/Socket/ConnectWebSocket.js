@@ -3,6 +3,7 @@ import React, {useEffect, useRef, useState} from "react";
 import WebSocketProject from "./WebSocketProject";
 import store from "../../Store"
 import shortId from "shortid";
+import './socket.css'
 
 const ConnectWebSocket = observer(() => {
     const persId = useRef(shortId.generate())
@@ -65,12 +66,11 @@ const ConnectWebSocket = observer(() => {
     }, [displayMessage]);
 
     return (
-        <div className="socketAdd">
+        <div>
             {hidden &&
-                <input
+                <input className='socketInput'
                        type='text'
                        disabled={false}
-                       style={{backgroundColor: '#D3D3D3', textAlign: 'center', borderWidth: 1, fontSize: 12, width:'15em', height:'1.5em'}}
                        value={displayMessage}
                        onChange={event => setDisplayMessage(event.target.value)}
                        // onChange={(event) => {
@@ -79,7 +79,7 @@ const ConnectWebSocket = observer(() => {
                        //     store.setIdSocket(event.target.value)
                        // }}
                 />}
-            <button style={{backgroundColor: '#D3D3D3', textAlign: 'center', borderWidth: 1, fontSize: 11, width:'6em', height:'2em'}}
+            <button className='socketButton'
                 onClick={()=>setHidden(!hidden)}
             >
                 Connect

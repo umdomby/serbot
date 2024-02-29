@@ -1,0 +1,39 @@
+.modal-button{
+    /*margin-left: 100%;*/
+    /*margin-top: 1em;*/
+    /*width: 0%;*/
+    /*position: absolute;*/
+    /*z-index: 999;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    float: right;
+}
+
+.modal-set {
+    /*z-index: 9999;*/
+    background-color: #282c34;
+    /*margin: 0 auto;*/
+    /*margin-top: 0;*/
+    /*padding: 20px;*/
+    /*border: 1px solid #888;*/
+    height: 100%;
+    width: 100%; /* Could be more or less, depending on screen size */
+    opacity: 1;
+}
+
+.title {
+    /*position: absolute;*/
+    /*margin: 0 auto;*/
+    /*min-height: 100vh;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    text-align: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+/*.modalButtonSet {*/
+/*    z-index: 9999;*/
+/*}*/

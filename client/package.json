@@ -1,0 +1,54 @@
+{
+  "name": "serbot",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "mobx": "^6.6.1",
+    "mobx-react": "^7.5.2",
+    "mobx-react-lite": "^4.0.5",
+    "nodemon": "^3.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
+    "react-scripts": "5.0.1",
+    "shortid": "^2.2.16",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "web-vitals": "^2.1.4",
+    "ws": "^8.16.0"
+  },
+  "scripts": {
+    "pm2": "pm2 start index.js",
+    "stop": "pm2 delete index",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prod": "serve -s build -l 3000",
+    "https": "HTTPS=true PORT=443 SSL_CRT_FILE='./cert/serbotonline/cert.pem' SSL_KEY_FILE='./cert/serbotonline/privkey.pem' react-scripts --openssl-legacy-provider start"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
